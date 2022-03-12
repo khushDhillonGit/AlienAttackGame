@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.videogame.GameBoardController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane fx:id="anchorPane" prefHeight="800.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.videogame.GameBoardController">
+   <children>
+      <StackPane layoutX="374.0" layoutY="359.0" prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="specialButton" fx:id="startButton" mnemonicParsing="false" text="Start Game" />
+         </children>
+      </StackPane>
+   </children>
 </AnchorPane>
